@@ -12,6 +12,11 @@
 		187CCE6A1FFFCA7500B4DDD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187CCE681FFFCA7500B4DDD3 /* Main.storyboard */; };
 		187CCE6C1FFFCA7500B4DDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187CCE6B1FFFCA7500B4DDD3 /* Assets.xcassets */; };
 		187CCE6F1FFFCA7500B4DDD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187CCE6D1FFFCA7500B4DDD3 /* LaunchScreen.storyboard */; };
+		187CCE771FFFE13F00B4DDD3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187CCE761FFFE13F00B4DDD3 /* SecondViewController.swift */; };
+		18F3D1682003791B0060D251 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3D1672003791B0060D251 /* LoadingViewController.swift */; };
+		18F3D16B20037DBE0060D251 /* MyLoading.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F3D16A20037DBE0060D251 /* MyLoading.xib */; };
+		18F3D16D200385700060D251 /* MyLoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3D16C200385700060D251 /* MyLoadingOverlay.swift */; };
+		18F3D16F2003D32A0060D251 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F3D16E2003D32A0060D251 /* TestTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		187CCE6B1FFFCA7500B4DDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187CCE6E1FFFCA7500B4DDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187CCE701FFFCA7500B4DDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187CCE761FFFE13F00B4DDD3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		18F3D1672003791B0060D251 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		18F3D16A20037DBE0060D251 /* MyLoading.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyLoading.xib; sourceTree = "<group>"; };
+		18F3D16C200385700060D251 /* MyLoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoadingOverlay.swift; sourceTree = "<group>"; };
+		18F3D16E2003D32A0060D251 /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 		187CCE581FFFCA7500B4DDD3 = {
 			isa = PBXGroup;
 			children = (
+				18F3D16920037D3C0060D251 /* LoadingLib */,
 				187CCE631FFFCA7500B4DDD3 /* LoadingOfLongTask */,
 				187CCE621FFFCA7500B4DDD3 /* Products */,
 			);
@@ -57,11 +68,23 @@
 				187CCE641FFFCA7500B4DDD3 /* AppDelegate.swift */,
 				187CCE661FFFCA7500B4DDD3 /* ViewController.swift */,
 				187CCE681FFFCA7500B4DDD3 /* Main.storyboard */,
+				18F3D16E2003D32A0060D251 /* TestTableViewController.swift */,
+				187CCE761FFFE13F00B4DDD3 /* SecondViewController.swift */,
 				187CCE6B1FFFCA7500B4DDD3 /* Assets.xcassets */,
 				187CCE6D1FFFCA7500B4DDD3 /* LaunchScreen.storyboard */,
 				187CCE701FFFCA7500B4DDD3 /* Info.plist */,
 			);
 			path = LoadingOfLongTask;
+			sourceTree = "<group>";
+		};
+		18F3D16920037D3C0060D251 /* LoadingLib */ = {
+			isa = PBXGroup;
+			children = (
+				18F3D16A20037DBE0060D251 /* MyLoading.xib */,
+				18F3D16C200385700060D251 /* MyLoadingOverlay.swift */,
+				18F3D1672003791B0060D251 /* LoadingViewController.swift */,
+			);
+			path = LoadingLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +148,7 @@
 			files = (
 				187CCE6F1FFFCA7500B4DDD3 /* LaunchScreen.storyboard in Resources */,
 				187CCE6C1FFFCA7500B4DDD3 /* Assets.xcassets in Resources */,
+				18F3D16B20037DBE0060D251 /* MyLoading.xib in Resources */,
 				187CCE6A1FFFCA7500B4DDD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187CCE771FFFE13F00B4DDD3 /* SecondViewController.swift in Sources */,
 				187CCE671FFFCA7500B4DDD3 /* ViewController.swift in Sources */,
 				187CCE651FFFCA7500B4DDD3 /* AppDelegate.swift in Sources */,
+				18F3D16D200385700060D251 /* MyLoadingOverlay.swift in Sources */,
+				18F3D1682003791B0060D251 /* LoadingViewController.swift in Sources */,
+				18F3D16F2003D32A0060D251 /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX7V9KZM5W;
 				INFOPLIST_FILE = LoadingOfLongTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobe.LoadingOfLongTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX7V9KZM5W;
 				INFOPLIST_FILE = LoadingOfLongTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kobe.LoadingOfLongTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";

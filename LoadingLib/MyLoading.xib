@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="WWd-00-7ZY" customClass="LoadingViewController" customModule="LoadingOfLongTask" customModuleProvider="target">
+            <view key="view" alpha="0.69999999999999996" contentMode="scaleToFill" id="lAG-gK-dA8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDA-wi-1WI">
+                        <rect key="frame" x="152.5" y="298" width="70" height="70"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Qmg-D6-W5A"/>
+                            <constraint firstAttribute="width" secondItem="DDA-wi-1WI" secondAttribute="height" multiplier="1:1" id="a5b-e2-ZGd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="F5r-EZ-bvb">
+                        <rect key="frame" x="169" y="315" width="37" height="37"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="F5r-EZ-bvb" firstAttribute="centerY" secondItem="lAG-gK-dA8" secondAttribute="centerY" id="3cE-Tn-GWk"/>
+                    <constraint firstItem="DDA-wi-1WI" firstAttribute="centerY" secondItem="lAG-gK-dA8" secondAttribute="centerY" id="Rew-Nh-znY"/>
+                    <constraint firstItem="F5r-EZ-bvb" firstAttribute="centerX" secondItem="lAG-gK-dA8" secondAttribute="centerX" id="o2H-Zi-e03"/>
+                    <constraint firstItem="DDA-wi-1WI" firstAttribute="centerX" secondItem="lAG-gK-dA8" secondAttribute="centerX" id="xx8-73-Er0"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="wS9-mE-Q6Q"/>
+            </view>
+            <connections>
+                <outlet property="loading" destination="F5r-EZ-bvb" id="xXF-Q4-o4b"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-5"/>
+        </viewController>
+    </objects>
+</document>
